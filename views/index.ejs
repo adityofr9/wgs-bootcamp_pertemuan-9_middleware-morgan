@@ -1,13 +1,18 @@
-    <br>
-    <hr>
-    <h1>Contact List</h1>
-    <ol>
-    <% if (cont.length < 1) { %>
-        <p>Contact is empty!</p>
-    <% } else { %> 
-        <% cont.forEach((contact) => { %>
-            <li>Nama: <%= contact.name %> 
-                <br>Email: <%= contact.email %></li>
-        <% });  %>
-    <% } %> 
-    </ol>
+<div class="container">
+    <div class="p-5" style="margin-top: 50px;">
+        <h1>Hello, <%= nama %></h1>
+        <br>
+        <hr>
+        <h3>Contact List</h3>
+        <ol>
+        <% if (cont.length < 1) { %>
+            <p>Contact is empty!</p>
+        <% } else { %> 
+            <% cont.forEach((contact) => { %>
+                <li>Nama: <%= contact.name %> 
+                    <br>Email: <%= contact.email %></li>
+            <% });  %>
+        <% } %> 
+        </ol>
+    </div>
+</div>
