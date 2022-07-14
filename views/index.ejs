@@ -1,0 +1,13 @@
+    <br>
+    <hr>
+    <h1>Contact List</h1>
+    <ol>
+    <% if (cont.length < 1) { %>
+        <p>Contact is empty!</p>
+    <% } else { %> 
+        <% cont.forEach((contact) => { %>
+            <li>Nama: <%= contact.name %> 
+                <br>Email: <%= contact.email %></li>
+        <% });  %>
+    <% } %> 
+    </ol>
